@@ -30,6 +30,6 @@ getArticleDataFrame <- memoise(function(article) {
   if (!(article %in% articles))
     stop("記事が見つかりません。")
 
-  # articleディレクトリから該当記事のCSVファイルをdata.frame型で読み込む
-  read.csv(sprintf("./articles/%s.csv", article), sep="\t", encoding="UTF-8")
+  # articleディレクトリから該当記事のTSVファイルをdata.frame型で読み込む
+  read.csv(sprintf("./articles/%s.tsv", article), sep="\t", encoding="UTF-8")
 })
