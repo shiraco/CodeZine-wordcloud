@@ -12,7 +12,7 @@ shinyServer(function(input, output, session) {
     })
   })
 
-  # wordcloud()の呼び出し結果が再現性があるように設定する
+  # wordcloud()の呼び出し結果に再現性があるように設定する
   wordcloud_rep <- repeatable(wordcloud)
 
   # 画面(ui.R)へ渡すワードクラウドを変数output$plotへ格納する
