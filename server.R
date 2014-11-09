@@ -20,9 +20,9 @@ shinyServer(function(input, output, session) {
 
     article.df <- article()
 
-    par(family="Hiragino Mincho Pro W6")  # Mac
-    # par(family="Japan1MinchoBBB")
+    # par(family="Hiragino Mincho Pro W6")  # Mac
     # par(family="IPAexMincho")  # Ubuntu ※fontの事前インストールが必要
+    # (参考) http://sudori.info/stat/stat_fig_font.html
 
     # ワードクラウドの作成（min.freqとmax.wordsの値は画面から入力された値を受け取る）
     wordcloud_rep(article.df$word, article.df$freq, scale=c(4,0.5),
